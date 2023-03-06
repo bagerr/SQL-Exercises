@@ -1,0 +1,26 @@
+1.--SELECT title and description column from film table
+    
+    SELECT title, description  FROM film;
+
+
+2.--SELECT ALL FILM TABLE COLUMN AND LENGTH OF FILM BETWEEN 60 AND 75
+    
+    SELECT * FROM film
+    WHERE length >= 60 AND length <= 75;
+
+3.--SELECT ALL FILM TABLE COLUMN AND RENTAL RATE OF 0.99 AND REPLACEMENT COST 12.99 OR 28.99
+    
+    SELECT * FROM film
+    WHERE (rental_rate = 0.99) AND (replacement_cost=12.99 OR replacement_cost=28.99);
+    
+4.--SELECT last_name of where first_name is Mary Valueof last_name?
+
+    SELECT last_name FROM customer
+    WHERE first_name = 'Mary';
+    
+    last_name = ANSWER is Smith
+
+5.--SELECT ALL FILM TABLE LENGTH IS NOT greater than 50, and at the same time, the rental_rate is NOT 2.99 or 4.99
+    
+    SELECT * FROM film
+    WHERE NOT (length > 50) AND NOT (rental_rate=2.99 OR rental_rate=4.99);
