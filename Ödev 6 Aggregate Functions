@@ -6,5 +6,5 @@
 3.--SELECT MAX(length) FROM film
     WHERE rental_rate = 0.99;
     
-4.--SELECT COUNT(rental_rate) FROM film
+4.--SELECT COUNT(DISTINCT(rental_rate)) FROM film
     WHERE length > 150; 
